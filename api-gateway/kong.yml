@@ -1,0 +1,117 @@
+_format_version: "2.1"
+
+services:
+  - name: user-service
+    url: ${USER_SERVICE}
+    routes:
+      - name: user-route
+        paths:
+          - /user
+
+  - name: salary-service
+    url: ${SALARY_SERVICE}
+    routes:
+      - name: salary-route
+        paths:
+          - /salary
+
+certificates:
+  - cert: |-
+      -----BEGIN CERTIFICATE-----
+        MIIEqTCCAxGgAwIBAgIQMVcw0sIzn50CSDaq1G1oPjANBgkqhkiG9w0BAQsFADCB
+        qzEeMBwGA1UEChMVbWtjZXJ0IGRldmVsb3BtZW50IENBMUAwPgYDVQQLDDdERVNL
+        VE9QLTAyOU1IM1ZcbHVjaWFAREVTS1RPUC0wMjlNSDNWIChsdWNpYW5vIGFsdmFy
+        ZXopMUcwRQYDVQQDDD5ta2NlcnQgREVTS1RPUC0wMjlNSDNWXGx1Y2lhQERFU0tU
+        T1AtMDI5TUgzViAobHVjaWFubyBhbHZhcmV6KTAeFw0yMTA1MjgxOTMwMjVaFw0y
+        MzA4MjgxOTMwMjVaMGsxJzAlBgNVBAoTHm1rY2VydCBkZXZlbG9wbWVudCBjZXJ0
+        aWZpY2F0ZTFAMD4GA1UECww3REVTS1RPUC0wMjlNSDNWXGx1Y2lhQERFU0tUT1At
+        MDI5TUgzViAobHVjaWFubyBhbHZhcmV6KTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+        ADCCAQoCggEBAKig+VFhOVAemx3Z+C34hTChXM5oSEjTNkkNiYrPp/qdMuccHyN8
+        KRVNveVChJF11iCfDbZlQCqGQ+rcCXTEDZtEVpxhWjjx/ciGTxnQjisr1ZGteqtp
+        GU7oK1omrrMpi19zyt+YPcruYyjwErucoIOexD88iKuf8owJbJTHCBedRQr8WVTN
+        eq2+5VwT7YSKDuTziobrsmTMiV7vdS8RnuhZzA8WZAvOWN+hQ0KHK0qAIwZXPnA8
+        qXZ3SQRi1UF10mRNROjPaL1TqoHKfCZ+ivzTkaEArWIh/msSvTrnPbrHm/dFlT+D
+        jEy8h379l0LwFKZHBXAS3/uI2uhkotDGljkCAwEAAaOBhzCBhDAOBgNVHQ8BAf8E
+        BAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHwYDVR0jBBgwFoAU453Pir7m/Yge
+        nj/ZYB8br1Z6h5MwPAYDVR0RBDUwM4IxZWMyLTE4LTIyOC0yMjMtNzEuc2EtZWFz
+        dC0xLmNvbXB1dGUuYW1hem9uYXdzLmNvbTANBgkqhkiG9w0BAQsFAAOCAYEAOpHY
+        S1l2AjvETbNxOJIVYnGX/xP0e1kXUz2kgAWKDB13c/mlIKI6EvGomco67sDfPdDl
+        cTHCtVMatjJ3V3XQIODphuif1pMbJczElFZFnqDCwdz9ywjrbSSg7qDaU7rpDint
+        4mYdG55cA0Qu7uUnlRZyyQTyTkq54KYawyyDZB0SIlhPHw8gbeVzUXBv27l123B1
+        ovqbCNMyDW4MwoJHq9l+/4CKcp4w8oyAdeztGN5P3ycaDMZUMxLU9oabkloghefh
+        EsSAn3T76PK4ZFJnWCVYsjfa/nRAUwdghck5SoYy/+HQ8QuP7ZKcr6Fsqe7ZJ6Pe
+        l+c8X/BBAEEAejabDRxcr5kZ3xmn8SLFM9EsF4c6//My3l4cqIabTTW1quclAph1
+        sbIa820JSe7vqZtu1uLqq8qT8IIwUrGuyVJw8sd6H9XMaik3n2+c1ZObk/FYHsb9
+        NUbw9bvBKw9sRweqkhiMoKFG4E/NMgYGYQ6JWubnhhNRFtZms69VIJRRf4Br
+      -----END CERTIFICATE-----
+    key: |-
+      -----BEGIN PRIVATE KEY-----
+        MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCooPlRYTlQHpsd
+        2fgt+IUwoVzOaEhI0zZJDYmKz6f6nTLnHB8jfCkVTb3lQoSRddYgnw22ZUAqhkPq
+        3Al0xA2bRFacYVo48f3Ihk8Z0I4rK9WRrXqraRlO6CtaJq6zKYtfc8rfmD3K7mMo
+        8BK7nKCDnsQ/PIirn/KMCWyUxwgXnUUK/FlUzXqtvuVcE+2Eig7k84qG67JkzIle
+        73UvEZ7oWcwPFmQLzljfoUNChytKgCMGVz5wPKl2d0kEYtVBddJkTUToz2i9U6qB
+        ynwmfor805GhAK1iIf5rEr065z26x5v3RZU/g4xMvId+/ZdC8BSmRwVwEt/7iNro
+        ZKLQxpY5AgMBAAECggEAMOxzKT8x56LZkjGZJY1C5zcJvADZZ/ePemZpD1LsA3P0
+        PsUT67GsIbgqbgd8es9bTp+W1OJPWYcW0V8Bh1USNYgAMOK10Gu1G6aL8Itnk/Ll
+        xZw1SOH3K8OEQGWUrfpRq2Hm7DQ5SVUcg9YTOUdZ8pXvjgE8Db8cGbDqRcfw+xh3
+        TXqUfFwIxeB47YFk6mfpSGXDXaUA9DyK5EaKZsPl2Laxqt49vhX/uCbt8yITtccl
+        stuEXHzTBNESR8gbFpkqmQrUK7+k8CVorUHRjcdXm4CzhZ3WYnxe6NP9OctgmjEV
+        /RbWZavkk5/n9FbJL7o8f2+MXk48MHpW3S6/VE7kWQKBgQDO12kwQidzotqT/WIb
+        xhtNsSFP0mm1DtTlN5jiTzhf7R6mjlUqaubqsDMlqwlb3qL7YaKgi3aWZ2IuEGSQ
+        SXPB8Mqye9HZ21E25OLLOZThPx2TJ02N9PALxaLXkZzIuJn3Vgdkbm9MH/0Du9PK
+        v7ZS5pO1pz7DCpOnb7A42xeduwKBgQDQtKPbIcZaK0TXmpqhCOBJDDJdIF/dRn2k
+        81JkDolzlusxi6J+Gc/l+9rtqPCr9bHBNgRcFSxn28jHJKVlmHBX4xr+DBuStZn2
+        M9PA+suX4HF6A70jyNG+cc4P3BFrUgXJtOpz95ThUMwtIhmKgZ4jvhWLwQnTqW5i
+        QEUWr4HimwKBgQDHyZ2atWtx8E18QHSxKwtYYc0xUqYz8p2Ewcz0W1yym1DNxBFT
+        JWriKUteCPTDPiri8Q2qUMs8v6M/pynbjHc5TyIagCrUaVjq0u6VKYs6fkJMztvE
+        UGBEnqOJ4OY1oslk9D2zrk/mkcdMAfKylbbAIGNwRJkEv4SbZ/ApGsaW3QKBgCjt
+        g8SRVwiPu6xcUT6LMxCgJ7BDjQkjrbgPT3T3tNTKH81TiMYZ4b9EKKa6npfaUsWF
+        Bk3YiSDE5RbIhPbrcfyKONzhGvcmTc8OUtRhWlOqXBaFbS37T8Z9It/RVEkriJ8J
+        r4CWaMfWxHOFYGTdDloMCMWjUX4El/UEjYfpWxtJAoGAJkxj+bFMyBIhVQYOQt1j
+        Wg3v+FeXnfW+iMZ5H4vXn0IeBAdRbkNuaJNvczo7iY8zKkml2TFGqyu7VGEEvHMh
+        AHkJpjpPsa97rAM3tHUWZxfVaNUU5Xl/+54su1d/h9+eEmvRvaimdbeAbwbD/+FW
+        ks41S+rn7cFs6TeCnQjyeXo=
+      -----END PRIVATE KEY-----
+    snis:
+      - name: ${EC2_AWS}
+
+plugins:
+  - name: jwt
+    service: salary-service
+    config:
+      secret_is_base64: false
+      run_on_preflight: true
+      key_claim_name: public
+    name: cors
+    config: 
+      origins:
+      - ${AWS_CLIENT}
+      methods:
+      - GET
+      - POST
+      headers:
+      - Accept
+      - Accept-Version
+      - Content-Length
+      - Content-MD5
+      - Content-Type
+      - Date
+      - Authorization
+      - canceltoken
+      - cancelToken
+      exposed_headers:
+      - Authorization
+      credentials: true
+      max_age: 3600
+      preflight_continue: false
+
+
+consumers:
+  - username: user123
+    custom_id: customerId
+
+jwt_secrets:
+  - consumer: user123
+    key: ${JWT_KEY}
+    secret: ${JWT_SECRET}

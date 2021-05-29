@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  kong:
+    image: kong:latest
+    volumes:
+      - ./kong.yml:/usr/local/kong/declarative/kong.yml
+      - ./cert-aws/:/usr/local/cert/api-gateway
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001, 0.0.0.0:8444 ssl
+      KONG_SSL_CERT: /usr/local/cert/api-gateway/cert.pem
+      KONG_SSL: "on"
+      KONG_SSL_CERT_KEY: /usr/local/cert/api-gateway/key.pem
+    ports:
+      - "8000:8000"
+      - "443:8443"
+      - "127.0.0.1:8001:8001"
+      - "127.0.0.1:8444:8444"
