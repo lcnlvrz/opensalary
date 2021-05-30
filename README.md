@@ -4,7 +4,7 @@ Open Salary is a free web application created with the objective of recollecting
 
 ## Architecture
 
-Open Salary architecture is based on microservices. This was possible thanks Kong API Gateway, the entrypoint of all microservices and responsible about authentication
+The Open Salary architecture is based on microservices. This was possible thanks Kong API Gateway, the entrypoint of all services and responsible about authentication (JWT Plugin). Besides, i used the approach zero dependence. That means each service is indendent of another one, with their own database. 
 
 ![alt text](https://i.imgur.com/S8p3QD6.png)
 
