@@ -21,6 +21,7 @@ The Open Salary architecture is based on microservices. This was possible thanks
 - PostgreSQL
 - Kong API Gateway
 - Docker
+- Load Balancer
 
 
 ## Project Status
