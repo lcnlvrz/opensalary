@@ -1,6 +1,6 @@
 # Open Salary
 
-Open Salary is a free web application created with the objective of recollecting data to make salaries more fair. In this platform you can post job salary as anonymous and find a salary by occupation, location and currency.
+Open Salary is a free web application created with the objective of recollecting data to make salaries more fair. In this platform you can post a job salary as anonymous and find a salary by occupation, location and currency.
 
 ## Architecture
 
