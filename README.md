@@ -24,7 +24,7 @@ Open Salary architecture is based on microservices. This was possible thanks Kon
 
 
 ## Project Status
-This project is currently in production and you can test it clicking in the following link:
+This project is currently in production and you can test it clicking the following link:
 
 [Open Salary](https://open-salary.netlify.app)
 
